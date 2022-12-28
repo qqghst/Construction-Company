@@ -8,6 +8,8 @@ import Icons from '../components/Icons';
 import BuyingAdvantages from '../components/BuyingAdvantages';
 import Footer from '../components/Footer';
 import ProjectsReady from '../components/ProjectsReady';
+import ProjectsOnGoing from '../components/ProjectsOnGoing';
+import Certificates from '../components/Certificates';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +28,8 @@ export default function Home() {
             <Icons />
             <BuyingAdvantages />
             <ProjectsReady />
+            <ProjectsOnGoing />
+            <Certificates />
             <Footer />
         </>
     )
