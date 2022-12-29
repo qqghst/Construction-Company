@@ -13,12 +13,6 @@ const ProjectsOnGoing = () => {
                     <ProjectOnGoingItem id='2'/>
                     <ProjectOnGoingItem id='3'/>
                     <ProjectOnGoingItem id='3'/>
-                    {/* <div>lol</div>
-                    <div>lol</div>
-                    <div>lol</div>
-                    <div>lol</div>
-                    <div>lol</div>
-                    <div>lol</div> */}
                 </div>
             </div>
             <div className="container mx-auto px-16 mb-[160px]">
