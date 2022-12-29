@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ProjectOnGoing from "./ProjectOnGoing";
+import ProjectOnGoingItem from "./ProjectOnGoingItem";
 
 const ProjectsOnGoing = () => {
     return (
         <section className="bg-white pt-[160px]">
-            <div className="container mx-auto px-16 mb-[160px]">
+            <div className="container mx-auto px-16 mb-[80px]">
                 <h2 className='text-[33.18px] lg:text-[39.81px] text-[#030E4A] font-bold pb-[70px]'>Наши действующие проекты</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <ProjectOnGoing id='1'/>
-                    <ProjectOnGoing id='2'/>
-                    <ProjectOnGoing id='3'/>
-                    <ProjectOnGoing id='3'/>
+                    <ProjectOnGoingItem id='1'/>
+                    <ProjectOnGoingItem id='2'/>
+                    <ProjectOnGoingItem id='3'/>
+                    <ProjectOnGoingItem id='3'/>
                     {/* <div>lol</div>
                     <div>lol</div>
                     <div>lol</div>
@@ -20,6 +20,9 @@ const ProjectsOnGoing = () => {
                     <div>lol</div>
                     <div>lol</div> */}
                 </div>
+            </div>
+            <div className="container mx-auto px-16 mb-[160px]">
+                <Link className="px-[32px] py-[16px] bg-[#030E4A] text-white rounded-md text-[13.33px]" href='/ProjectsAll'>ВCЕ ПРОЕКТЫ</Link>
             </div>
         </section>
     )
