@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const CompAdvantages = () => {
     return (
-        <section className='flex flex-col bg-white py-20'>
+        <section className='flex flex-col bg-white '>
             <div className='container mx-auto px-16 mt-[64px]'>
                 <h2 className='text-[33.18px] lg:text-[39.81px] text-[#030E4A] font-bold text-center pb-[70px]'>Конкурентные преимущества</h2>
                 <div>

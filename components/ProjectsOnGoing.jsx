@@ -5,7 +5,7 @@ import ProjectOnGoingItem from "./ProjectOnGoingItem";
 
 const ProjectsOnGoing = () => {
     return (
-        <section className="bg-white pt-[160px]">
+        <section className="bg-white ">
             <div className="container mx-auto px-16 mb-[80px]">
                 <h2 className='text-[33.18px] lg:text-[39.81px] text-[#030E4A] font-bold pb-[70px]'>Наши действующие проекты</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
