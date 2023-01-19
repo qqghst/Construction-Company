@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<!-- 1) уменьшить шрифты
+2)уменьшить заставку
+4) изменить шрифт в контактах
+3) строительную компанию лигу (вторую) убрать
+5)убрать капс в контактах
+6) строим и проектируем - посередине
+7)наши услуги сделать как она хочет+++
+8)контакты сделать как она хочет++++ -->

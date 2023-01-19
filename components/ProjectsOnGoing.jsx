@@ -7,7 +7,7 @@ const ProjectsOnGoing = () => {
     return (
         <section className="bg-white ">
             <div className="container mx-auto px-16 mb-[80px]">
-                <h2 className='text-[33.18px] lg:text-[39.81px] text-[#030E4A] font-bold pb-[70px]'>Наши действующие проекты</h2>
+                <h2 className='text-[27.65px] lg:text-[33.18px] text-[#030E4A] font-bold pb-[70px]'>Наши действующие проекты</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <ProjectOnGoingItem id='1'/>
                     <ProjectOnGoingItem id='2'/>
@@ -16,7 +16,7 @@ const ProjectsOnGoing = () => {
                 </div>
             </div>
             <div className="container mx-auto px-16 mb-[160px]">
-                <Link className="px-[32px] py-[16px] bg-[#030E4A] text-white rounded-md text-[13.33px]" href='/ProjectsAll'>ВCЕ ПРОЕКТЫ</Link>
+                <Link className="px-[32px] py-[16px] bg-[#030E4A] text-white rounded-md text-[13.33px]" href='/ProjectsAll'>Все проекты</Link>
             </div>
         </section>
     )

@@ -29,7 +29,7 @@ export default function Home() {
             <BuyingAdvantages />
             <ProjectsReady />
             <ProjectsOnGoing />
-            <Certificates />
+            {/* <Certificates /> */}
             <Footer />
         </>
     )
