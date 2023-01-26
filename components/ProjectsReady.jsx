@@ -5,7 +5,7 @@ import ProjectReadyItem from "./ProjectReadyItem";
 
 const ProjectsReady = () => {
     return (
-        <section className="bg-white pt-[80px]">
+        <section id='projectsReady' className="bg-white pt-[80px]">
             <div className="container mx-auto px-16 mb-[160px]">
                 <h2 className='text-[27.65px] lg:text-[33.18px] text-[#030E4A] font-bold pb-[70px]'>Наши готовые проекты</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

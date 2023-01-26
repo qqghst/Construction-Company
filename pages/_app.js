@@ -1,5 +1,12 @@
 import '../styles/globals.scss'
+// import ScrollObserver from '../utils/scroll-observer.jsx'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  return (
+    // <ScrollObserver>
+      <Component {...pageProps} />
+    // </ScrollObserver>
+  )
 }
+
+export default App;
