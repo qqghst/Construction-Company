@@ -4,7 +4,7 @@ import Image from 'next/image';
 const CompAdvantages = () => {
     return (
         <section className='flex flex-col bg-white '>
-            <div className='container mx-auto px-16 mt-[64px] mb-[160px]'>
+            <div className='container mx-auto mt-[64px] mb-[160px]'>
                 <h2 className='text-[27.65px] lg:text-[33.18px] text-[#030E4A] font-bold text-center pb-[70px]'>Конкурентные преимущества</h2>
                 <div>
                     <ul className='text-[16.00px] lg:text-[23.04px] font-medium flex flex-col gap-[16px] leading-[140%] '>

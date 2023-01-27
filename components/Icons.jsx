@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Icons = () => {
     return (
         <section className='flex flex-col bg-[#F3F3F3]'>
-            <div className='flex flex-col container mx-auto px-11 my-[160px] gap-[48px]'>
+            <div className='flex flex-col container mx-auto my-[160px] gap-[48px]'>
                 <div className='flex flex-row gap-[48px]'>
                     <div className={`flex-grow-0`}>
                         <Image

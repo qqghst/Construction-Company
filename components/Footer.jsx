@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <section className="flex flex-row  bg-[#F3F3F3]">
-            <div className="flex flex-row justify-between container mx-auto px-11 my-[160px]">
+        <section className="flex flex-row bg-[#F3F3F3]">
+            <div className="flex flex-row justify-between container mx-auto my-[160px] text-[12px] md:text-[16px]">
                 <div className={`flex-grow-0`}>
                     <Image
                         src='/assets/logo.png'
@@ -39,16 +39,6 @@ const Footer = () => {
                         <p>Офис продаж: <br/> Республика Калмыкия, <br />г. Элиста, ул. Ю. Клыкова, д. 4, стр. 5</p>
                     </div>
                 </div>
-
-                {/* <div>
-                    <h4 className="font-bold pb-[40px] text-[#030E4A]">Навигация</h4>
-                    <div className="flex flex-col gap-[16px] tracking-wide">
-                        <a className="hover:text-[#030E4A]" href="#hero">Главная</a>
-                        <a className="hover:text-[#030E4A]" href="#services">Услуги</a>
-                        <a className="hover:text-[#030E4A]" href="#projects">Проекты</a>
-                    </div>
-                </div> */}
-
             </div>
         </section>
     )

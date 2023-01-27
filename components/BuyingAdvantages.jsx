@@ -4,7 +4,7 @@ import Image from "next/image";
 const BuyingAdvantages = () => {
     return (
         <section className='flex flex-col bg-white py-20'>
-            <div className='container mx-auto px-11 mt-[64px]'>
+            <div className='container mx-auto mt-[64px]'>
                 <h2 className='mx-auto text-[27.65px] lg:text-[33.18px] text-[#030E4A] font-bold text-center pb-[70px] max-w-[700px]'>Преимущества покупки квартиры от строительной компании «ЛИГА»</h2>
                 <div>
                     <ul className='text-[16.00px] lg:text-[23.04px] font-medium flex flex-col gap-[32px] leading-[150%]'>
