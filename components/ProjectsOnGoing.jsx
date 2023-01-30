@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ProjectOnGoingItem from "./ProjectOnGoingItem";
+import Button from "./UI/Button";
 
 const ProjectsOnGoing = () => {
     return (
@@ -15,8 +16,10 @@ const ProjectsOnGoing = () => {
                     <ProjectOnGoingItem id='3'/>
                 </div>
             </div>
-            <div className="container mx-auto px-16 pb-[160px]">
-                <Link className="px-[32px] py-[16px] bg-[#030E4A] text-white rounded-md text-[13.33px]" href='/ProjectsAll'>Все проекты</Link>
+            <div className="container mx-auto pb-[160px]">
+                <Link href='/ProjectsAll'>
+                    <Button>Все проекты</Button>
+                </Link>
             </div>
         </section>
     )

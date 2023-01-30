@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectReady = ({ id }) => {
+const ProjectReady = ({ id, description }) => {
     return (
         <div>
             <Image
@@ -12,6 +12,7 @@ const ProjectReady = ({ id }) => {
                 width={5000}
                 height={2500}
             />
+            <div className="text-[13.33px] text-[#020202] pt-[8px]">{description}</div>
         </div>
     )
 }
