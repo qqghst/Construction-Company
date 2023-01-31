@@ -9,11 +9,24 @@ import BuyingAdvantages from '../components/BuyingAdvantages';
 import Footer from '../components/Footer';
 import ProjectsReady from '../components/ProjectsReady';
 import ProjectsOnGoing from '../components/ProjectsOnGoing';
-import Navigation2 from '../components/Navigation2';
+import Nav from '../components/Nav';
+import React, {useState} from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    //копируется номер и показывается сообщение
+	const [ isAlertVisible, setIsAlertVisible ] = useState(false);
+
+	const handleButtonNumberClick = () => {
+		navigator.clipboard.writeText('+7 (937) 461-08-88');
+		setTimeout(() => {
+	        setIsAlertVisible(false);
+		}, 1000);
+		setIsAlertVisible(true);
+	}
+    //копируется номер и показывается сообщение
+
     return (
         <>
             <Head>
@@ -22,7 +35,10 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navigation2 />
+            <Nav 
+                handleButtonNumberClick={handleButtonNumberClick}
+                isAlertVisible={isAlertVisible}
+            />
             <Hero />
             <Services />
             <CompAdvantages />
@@ -30,7 +46,10 @@ export default function Home() {
             <BuyingAdvantages />
             <ProjectsReady />
             <ProjectsOnGoing />
-            <Footer />
+            <Footer 
+                handleButtonNumberClick={handleButtonNumberClick}
+                isAlertVisible={isAlertVisible}
+            />
         </>
     )
 }

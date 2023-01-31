@@ -2,43 +2,32 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const Navigation2 = () => {
+const Navigation2 = ({handleButtonNumberClick, isAlertVisible}) => {
+	//бургер меню
 	const [showMenu, setShowMenu] = useState(false)
 
 	const closeMenu = () => {
 		setShowMenu(false)
 	}
-
-	const copyNumber = () => {
-		navigator.clipboard.writeText('+7 (937) 461-08-88')
-	}
-
-	const alertWhenCopyNumber = () => {
-		alert('Номер скопирован!')
-	}
-
-	const lol = (one, two) => {
-		alertWhenCopyNumber()
-		copyNumber()
-	}
+	//бургер меню
 
 	return (
 		<nav className='flex flex-col justify-center items-end px-[32px] text-center fixed w-full pt-[32px]'>
 			<div className='container mx-auto justify-center items-center text-center md:flex hidden'>
 				<ul className='flex flex-row gap-[48px] text-[#030E4A] font-bold'>
-					<li className='hover:text-white'>
+					<li className=''>
 						<Link href='/'>Главная</Link>
 					</li>
-					<li className='hover:text-white'>
+					<li className=''>
 						<Link href='#services' scroll={false}>Услуги</Link>
 					</li>
-					<li className='hover:text-white'>
+					<li className=''>
 						<Link href='#projectsReady' scroll={false}>Проекты</Link>
 					</li>
-					<li className='hover:text-white'>
-						<button onClick={lol} href=''>
-							+7 (937) 461-08-88
-						</button>
+					<li className=''>
+						<a onClick={handleButtonNumberClick} className='cursor-pointer'>+7 (937) 461-08-88</a>
+           				{/* {isAlertVisible && <div className='absolute top-[128px] left-0 right-0'><p className='inline-block z-1'>Номер скопирован!</p></div>} */}
+						{isAlertVisible && <div className='absolute top-[128px] left-0 right-0 z-10'>Номер скопирован!</div>}
 					</li>
 				</ul>
 			</div>
@@ -76,10 +65,11 @@ const Navigation2 = () => {
 								<Link onClick={closeMenu} href='#projectsReady'>Проекты</Link>
 							</li>
 							<li className=''>
-								<button onClick={lol} href=''>
-									+7 (937) 461-08-88
-								</button>
-							</li>
+								<button onClick={handleButtonNumberClick}>+7 (937) 461-08-88</button>
+           						{/* {isAlertVisible && <div className='absolute top-[128px] left-0 right-0'><p className='inline-block z-1'>Номер скопирован!</p></div>} */}
+								{isAlertVisible && 
+								<div className='absolute top-[128px] left-0 right-0'>Номер скопирован!</div>}
+					</li>
 						</ul>
 					</div>
 				</div>
