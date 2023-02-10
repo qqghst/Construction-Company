@@ -26,12 +26,9 @@ const Footer = ({handleButtonNumberClick, isAlertVisible}) => {
                 <div>
                     <h4 className="font-bold pb-[16px] text-[#030E4A]">Контакты</h4>
                     <div className="flex flex-col gap-[8px] tracking-wide">
-                        {/* <a onClick={handleButtonNumberClick} className='cursor-pointer'>+7 (937) 461-08-88</a>
-						{isAlertVisible && 
-							<div className='absolute top-[128px] left-0 right-0'>Номер скопирован!</div>} */}
                         <p className="hover:text-[#030E4A]">+7 (937) 461-08-88</p>
                         <a className="hover:text-[#030E4A]" target="_blank" rel="noopener noreferrer" href="https://vk.com/ligaelista">https://vk.com/ligaelista</a>
-                        <a className="hover:text-[#030E4A]" href="#"><p>Ligaelista@mail.ru</p></a>
+                        <a className="hover:text-[#030E4A]" href="#"><p>ligaelista@mail.ru</p></a>
                     </div>
                 </div>
 

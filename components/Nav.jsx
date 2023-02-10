@@ -26,7 +26,6 @@ const Navigation2 = ({handleButtonNumberClick, isAlertVisible}) => {
 					</li>
 					<li className=''>
 						<a onClick={handleButtonNumberClick} className='cursor-pointer'>+7 (937) 461-08-88</a>
-           				{/* {isAlertVisible && <div className='absolute top-[128px] left-0 right-0'><p className='inline-block z-1'>Номер скопирован!</p></div>} */}
 						{isAlertVisible && <div className='absolute top-[128px] left-0 right-0 z-10'>Номер скопирован!</div>}
 					</li>
 				</ul>
@@ -46,11 +45,7 @@ const Navigation2 = ({handleButtonNumberClick, isAlertVisible}) => {
 					className='object-contain z-[100] top-0 right-0'
 				/>
 
-				<div
-					className={`${
-						showMenu ? 'flex' : 'hidden'
-					} bg-[#71bff3] absolute top-0 right-0  w-screen h-screen rounded-xl sidebar flex justify-center items-center z-50`}
-				>
+				<div className={`${ showMenu ? 'flex' : 'hidden' } bg-[#71bff3] absolute top-0 right-0  w-screen h-screen rounded-xl sidebar flex justify-center items-center z-50`}>
 					<div className={`flex flex-col gap-[40px] z-50`}>
 						<ul
 							className={`flex flex-col justify-center text-center  gap-[40px] text-whiteOppacity text-[16.00px] font-bold `}
@@ -66,7 +61,6 @@ const Navigation2 = ({handleButtonNumberClick, isAlertVisible}) => {
 							</li>
 							<li className=''>
 								<button onClick={handleButtonNumberClick}>+7 (937) 461-08-88</button>
-           						{/* {isAlertVisible && <div className='absolute top-[128px] left-0 right-0'><p className='inline-block z-1'>Номер скопирован!</p></div>} */}
 								{isAlertVisible && 
 								<div className='absolute top-[128px] left-0 right-0'>Номер скопирован!</div>}
 					</li>

@@ -7,7 +7,7 @@ const ProjectReady = ({ id, description }) => {
         <div>
             <Image
                 className="rounded-md"
-                src={`/assets/projectsReady/liga_project_${id}.jpg`}
+                src={`/assets/projectsReady/liga_project_${id}.webp`}
                 alt='project'
                 width={5000}
                 height={2500}

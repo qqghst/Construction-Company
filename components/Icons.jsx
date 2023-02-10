@@ -1,11 +1,32 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
+import { icons } from '../constants'
 
 const Icons = () => {
-    return (
-        <section className='flex flex-col bg-[#F3F3F3]'>
-            <div className='flex flex-col container mx-auto my-[160px] gap-[48px] px-8'>
-                <div className='flex flex-row gap-[48px]'>
+	return (
+		<section className='flex flex-col bg-[#F3F3F3]'>
+			<div className='flex flex-col container mx-auto my-[160px] gap-[80px] px-8'>
+				{icons.map((icon, index) => (
+					<div key={icon.id}>
+						<div className='flex flex-row gap-[80px]'>
+                            <div className='flex-grow-0'>
+                                <Image 
+                                    src={icon.image}
+                                    alt='team'
+                                    width={240 / 2}
+                                    height={240 / 2}
+                                />
+                            </div>
+                            <div className='flex flex-col gap-[12px] w-[1300px]'>
+                                <h3 className='text-[#030E4A] text-[27.65px] lg:text-[33.18px] font-bold'>{icon.title}</h3>
+                                <p className='text-[#020202] text-[16px] lg:text-[23.04px] leading-[160%]'>{icon.text}</p>
+                            </div>
+						</div>
+					</div>
+				))}
+
+
+				 {/* <div className='flex flex-row gap-[48px]'>
                     <div className={`flex-grow-0`}>
                         <Image
                             src='/assets/icons/team.png'
@@ -18,7 +39,7 @@ const Icons = () => {
                         <h3 className='text-[#030E4A] text-[27.65px] lg:text-[33.18px] font-bold'>Команда</h3>
                         <p className='text-[#020202] text-[16px] lg:text-[23.04px] leading-[160%]'>Мы - команда профессионалов, объединенных одной целью. Каждый сотрудник важен и влияет на общий результат. Мы уважаем, доверяем и поддерживаем друг друга. Сила нашей команды в Единстве!</p>
                     </div>
-                </div>
+                </div> 
 
                 <div className='flex flex-row gap-[48px]'>
                     <div className={`flex-grow-0`}>
@@ -77,10 +98,10 @@ const Icons = () => {
                         <h3 className='text-[#030E4A] text-[27.65px] lg:text-[33.18px] font-bold'>Надежность</h3>
                         <p className='text-[#020202] text-[16px] lg:text-[23.04px] leading-[160%]'>Верность взятым на себя обязательствам. Честность и порядочность в отношении с партнерами и клиентами. Уверенность в завтрашнем дне!</p>
                     </div>
-                </div>
-            </div>
-        </section>
-    )
+                </div>  */}
+			</div>
+		</section>
+	)
 }
 
 export default Icons

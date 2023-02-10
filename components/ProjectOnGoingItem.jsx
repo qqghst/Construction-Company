@@ -7,7 +7,7 @@ const ProjectOnGoing = ({ id, description }) => {
         <div className="flex flex-col gap-[16px]">
             <Image
                 className="rounded-md"
-                src={`/assets/projectsOnGoing/liga_project_${id}.jpg`}
+                src={`/assets/projectsOnGoing/liga_project_${id}.webp`}
                 alt='projectOnGoing'
                 width={1000}
                 height={600}

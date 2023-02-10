@@ -1,4 +1,4 @@
-import React, { useRef, useContext, useState, useCallback } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -8,15 +8,15 @@ const Hero = () => {
 			id='hero'
 			className='min-h-screen flex flex-col justify-center items-center bg-bgHero bg-no-repeat bg-cover bg-center sticky top-0 -z-10'
 		>
-			<div className='font-bold drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-center flex-1 flex items-center justify-center flex-col'>
+			<div className='font-bold drop-shadow-[0_5px_3px_rgba(0,0,0,0.2)] text-center flex-1 flex items-center justify-center flex-col'>
 				<Image
 					src='/assets/logo.png'
-					width={502 / 2}
-					height={312 / 2}
+					width={640 / 2}
+					height={448 / 2}
 					alt='logo'
 				/>
 				<div className='pt-[16px]'>
-					<h1 className='text-[33.18px]'>Строительная компания</h1>
+					<h1 className='text-[27.65px] md:text-[33.18px]'>Строительная компания</h1>
 				</div>
 			</div>
 			<div className={`flex-grow-0 animate-bounce`}>
