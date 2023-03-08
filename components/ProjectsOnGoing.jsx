@@ -12,8 +12,8 @@ const ProjectsOnGoing = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <ProjectOnGoingItem id='1'/>
                     <ProjectOnGoingItem id='2'/>
-                    <ProjectOnGoingItem id='3'/>
-                    <ProjectOnGoingItem id='3'/>
+                    <ProjectOnGoingItem id='map'/>
+                    <ProjectOnGoingItem id='project'/>
                 </div>
             </div>
             <div className="container mx-auto pb-[160px] px-8">

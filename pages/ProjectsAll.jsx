@@ -35,11 +35,8 @@ const ProjectsAll = () => {
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
 					<ProjectOnGoingItem id='1' description='Описание проекта' />
 					<ProjectOnGoingItem id='2' description='Описание проекта' />
-					<ProjectOnGoingItem id='3' description='Описание проекта' />
-					<ProjectOnGoingItem
-						id='town1'
-						description='Описание проекта'
-					/>
+					<ProjectOnGoingItem id='map' description='Описание проекта' />
+					<ProjectOnGoingItem id='project' description='Описание проекта' />
 				</div>
 			</div>
 		</section>
