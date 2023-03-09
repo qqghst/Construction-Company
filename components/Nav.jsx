@@ -12,7 +12,7 @@ const Navigation2 = ({handleButtonNumberClick, isAlertVisible}) => {
 	//бургер меню
 
 	return (
-		<nav className='flex flex-col justify-center items-end px-[32px] text-center fixed w-full pt-[32px]'>
+		<nav className='flex flex-col justify-center items-end px-[32px] text-center absolute w-full pt-[32px]'>
 			<div className='container mx-auto justify-center items-center text-center md:flex hidden'>
 				<ul className='flex flex-row gap-[48px] text-[#030E4A] font-bold'>
 					<li className=''>

@@ -1,36 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 
-import ProjectOnGoingItem from '../../components/ProjectOnGoingItem'
+const ProjectsOnGoing = () => {
+	const slides = [
+		{
+			url: 'assets/projectsOnGoing/liga_project_1.webp'
+		},
+		{
+			url: 'assets/projectsOnGoing/liga_project_2.webp'
+		},
+		{
+			url: 'assets/projectsOnGoing/liga_project_map.webp'
+		},
+		{
+			url: 'assets/projectsOnGoing/liga_project_project.webp'
+		}
+	]
 
-const ProjectsReady = () => {
-		const settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		afterChange: index => setCurrentSlide(index),
+	const [currentIndex, setCurrentIndex] = useState(0)
+
+	const prevSlide = () => {
+		const isFirstSlide = currentIndex === 0
+		const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1
+		setCurrentIndex(newIndex)
+	}
+
+	const nextSlide = () => {
+		const isLastSlide = currentIndex === slides.length - 1
+		const newIndex = isLastSlide ? 0 : currentIndex + 1
+		setCurrentIndex(newIndex)
 	}
 
 	return (
 		<div className='container mx-auto mb-[160px]'>
-			<h2 className='text-[33.18px] lg:text-[39.81px] text-[#030E4A] font-bold pb-[70px]'>
+			<h2 className='text-[33.18px] lg:text-[39.81px] text-[#030E4A] font-bold '>
 				Наши действующие проекты
 			</h2>
-			<div className='flex justify-between items-center gap-[32px]'>
-				<div className=''>
-					<ProjectOnGoingItem id='1' width={1000} height={500} />
-					{/* <ProjectOnGoingItem id='2' width={700} height={500} />
-					<ProjectOnGoingItem id='map' width={700} height={500} />
-					<ProjectOnGoingItem id='project' width={700} height={500} /> */}
+			<div className='flex flex-col xl:flex-row justify-between items-center gap-[32px]'>
+				<div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative'>
+					<div
+						style={{
+							backgroundImage: `url(/${slides[currentIndex].url})`
+						}}
+						className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+					></div>
+					<div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/50 text-white cursor-pointer'>
+						<BsChevronCompactLeft onClick={prevSlide} size={32} />
+					</div>
+					<div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/50 text-white cursor-pointer'>
+						<BsChevronCompactRight onClick={nextSlide} size={32} />
+					</div>
 				</div>
-				<div className='text-[16px] text-black flex flex-col gap-[16px] mt-[32px] w-[700px]'>
+				<div className='text-[16px] text-black flex flex-col gap-[16px] xl:w-[700px] px-[32px]'>
 					<p>
 						Жилые дома по улице Хулхутинская, 4 представляет собой
 						комплекс из 28 блокированных жилых домов с мансардным
@@ -55,4 +79,4 @@ const ProjectsReady = () => {
 	)
 }
 
-export default ProjectsReady
+export default ProjectsOnGoing
