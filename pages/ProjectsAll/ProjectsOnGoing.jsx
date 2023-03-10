@@ -13,10 +13,10 @@ const ProjectsOnGoing = () => {
 			url: 'assets/projectsOnGoing/liga_project_2.webp'
 		},
 		{
-			url: 'assets/projectsOnGoing/liga_project_map.webp'
+			url: 'assets/projectsOnGoing/liga_project_project.webp'
 		},
 		{
-			url: 'assets/projectsOnGoing/liga_project_project.webp'
+			url: 'assets/projectsOnGoing/liga_project_map.webp'
 		}
 	]
 

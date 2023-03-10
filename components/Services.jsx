@@ -9,7 +9,7 @@ const Services = () => {
                 <p className='text-[16.00px] lg:text-[23.04px] font-medium text-center'>Строим и проектируем <strong>коттеджи</strong> и <strong>многоквартирные дома</strong> в городе Элиста с 2018-го года.</p>
             </div>
             <div className='container mx-auto mt-[64px] px-8'>
-                <h2 className='text-[27.65px] lg:text-[33.18px] text-[#030E4A] font-bold pb-[70px]'>Наши услуги</h2>
+                <h2 className='text-[27.65px] lg:text-[33.18px] text-[#030E4A] font-bold pb-[70px] text-center'>Наши услуги</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center'>
                     {services.map((service, index) => 
                         <div key={service.id} >
